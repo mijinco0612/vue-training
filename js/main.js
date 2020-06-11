@@ -5,7 +5,7 @@ var app = new Vue({
     user:{
       firstName:'Taro',
       lastName:'Yamada',
-      age:28
+      age:2
     }
 
   }
