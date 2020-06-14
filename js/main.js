@@ -7,6 +7,5 @@ var app = new Vue({
       lastName:'Yamada',
       age:2
     }
-
   }
 })
