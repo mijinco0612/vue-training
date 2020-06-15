@@ -4,6 +4,15 @@ var app = new Vue({
     message:'Hello World!!',
     url:'https://jp.vuejs.org/',
     toggle:true,
-    languages:['JavaScript','Ruby','Python']
+    languages:[
+        'JavaScript',
+      'Ruby',
+      'Python'
+    ]
+  },
+  methods:{
+    onClick:function() {
+      this.message = 'Clicked!'
+    }
   }
 })

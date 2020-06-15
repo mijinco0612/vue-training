@@ -11,8 +11,16 @@
             <a v-bind:href="url">Vuejs.org</a>
         </p>
         <ul>
-            <li v-for=""
+            <li v-for="language in languages">
+                {{language}}
+            </li>
         </ul>
+        <button v-on:click="onClick">
+            Click!
+        </button>
+        <p>
+            <input v-model="message">
+        </p>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
 <script src="js/main.js"></script>
