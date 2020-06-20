@@ -8,9 +8,14 @@
 <body>
 <div id="app">
     <p>
-        {{ price | numberFormat }}
+        {{ jpyPrice }}
     </p>
-    <input type="text" v-bind:value="price | numberFormat">
+    <p>
+        {{ jpyPrice | toUSD }}
+    </p>
+    <p>
+        {{ jpyPrice | toUSD | numberFormat }}
+    </p>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
 <script src="js/main.js"></script>
