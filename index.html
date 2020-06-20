@@ -7,6 +7,27 @@
 </head>
 <body>
 <div id="app">
+    <p>
+        {{message}}
+    </p>
+    <p>
+        {{number+1}}
+    </p>
+    <p>
+        {{message.split('').reverse().join('')}}
+    </p>
+    <p>
+        {{ok?'Yes':'No'}}
+    </p>
+
+    <p>
+        <!-- {{ var x = 1}} 単一式のみ実行できるためこれはエラー -->
+        <!-- {{ if(ok){ return message } }} フロー処理もかけないのでこれもエラー -->
+        <!-- フロー制御を書きたいときは三項演算子式をつかう-->
+        {{ok? message : ''}}
+    </p>
+
+
 </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16"></script>
 <script src="js/main.js"></script>
